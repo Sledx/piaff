@@ -1,0 +1,359 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700&subset=latin,latin-ext');
+* {
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Quicksand', sans-serif;
+	font-weight: 300;
+	text-align: center;
+}
+p {
+	margin-top: 10px;
+	font-size: 12px;
+}
+h1 {
+	font-size: 40px;
+}
+h3 {
+	text-align: center;
+}
+body {
+    padding-top: 60px;
+}
+[class*="col-"] {
+	float: left;
+	padding: 0;
+	min-height: 1px;
+}
+/*clearfix*/
+.row:before,
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+.container {
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 0;
+}
+.container-fluid {
+	width: 100%;
+	margin: 0 auto;
+	padding: 0;
+}
+section > .container {
+	margin: 50px auto;
+	text-align: center;
+}
+.navbar-inverse {
+    background-image: none;
+	background-color: #fff;
+}
+nav img {
+	padding: 10px 20px;
+	height: 70px;
+	float: left;
+}
+nav .big-image {
+    float: none;
+}
+.navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse {
+    max-height: 360px;
+}
+.navbar, .navbar-inverse {
+	border-radius: 0;
+	border: none;
+	margin-bottom: 0;
+	min-height: 70px;
+}
+.nav li {
+	display: inline;
+}
+.navbar-header > div {
+    display: inline-block;
+}
+.navbar-header > div > p {
+    text-align: left;
+}
+.vr {
+    height: 50px;
+    margin-top: 10px;
+    padding-left: 20px;
+    border-left: 1px solid black;
+}
+.vr > p {
+    margin: 0;
+}
+.navbar-inverse .navbar-nav {
+    width: 70%;
+}
+nav .navbar-collapse ul {
+    margin-left: 5%;
+}
+.staff > a {
+    position: relative;
+    top: -25vh;
+}
+.navbar-inverse .navbar-nav > li {
+    width: 20%;
+}
+.navbar-inverse .navbar-nav > li > a {
+	color: #000;
+	font-size: 1.3em;
+	padding: 30px 25px 33px 25px;
+    text-decoration: none;
+    text-transform: uppercase;
+	height: 70px;
+	line-height: 70px;
+	padding: 0 20px;
+}
+.navbar-inverse .navbar-toggle .icon-bar {
+    background-color: #000;
+    height: 3px;
+}
+.navbar-inverse .navbar-toggle:hover {
+    background-color: #fff;
+}
+.navbar-inverse .navbar-toggle {
+    margin: 15px 30px;
+}
+.navbar-inverse .navbar-toggle:focus {
+    background-color: transparent;
+}
+.navbar-inverse .navbar-toggle {
+    border-color: transparent;
+}
+.navbar-inverse .navbar-nav li a:hover {
+	background-color: #444444;
+	transition: 0.3s all linear;
+	height: 100%;
+}
+.hero {
+	height: calc(100vh - 70px);
+	width: 100%;
+	background: url("pictures/jumbo.jpeg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.hero p {
+    padding-top: 7%;
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+    color: #fff;
+}
+.icons {
+    height: calc(100vh - 70px - 20%);
+}
+.icons > a {
+    position: relative;
+    top: -30vh;
+}
+.icons h1,
+.staff h1 {
+    margin-bottom: 50px;
+}
+.icons .services {
+	background: #313234;
+	height: 100px;
+	width: 100px;
+	border-radius: 10px;
+	padding-top: 5px;
+	margin: 20px auto 0;
+}
+.icons .services > i {
+	font-size: 70px;
+	line-height: 90px;
+	color: #fff;
+}
+.icons h3 {
+	margin-top: 10px;
+	text-transform: uppercase;
+}
+.pro {
+    position: relative;
+	height: 70vh;
+	width: 100%;
+	background: url("pictures/pro.jpeg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding-top: 10%;
+}
+.pro > a {
+    position: relative;
+    top: -35vh;
+}
+.pro p {
+    font-size: 16px;
+}
+.pro .thumbnail {
+    background-color: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    top: -80px;
+}
+.thumbnail {
+    margin-top: 25%;
+}
+.btn-primary {
+    background-image: none;
+    background-color: firebrick;
+}
+.btn {
+    border: 0;
+}
+.head-gallery {
+	margin: 20px auto;
+}
+.staff .row > div > div {
+	width: 200px;
+	height: 200px;
+	border-radius: 100px;
+	cursor: pointer;
+	margin: auto;
+}
+.staff .row h3 {
+	font-weight: 500;
+    margin: 0;
+    line-height: inherit;
+}
+.staff h4 {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+.staff span {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 24px;
+}	
+.staff .row > div:nth-child(1) > div {
+	background: url("pictures/founder.png") center /cover;
+}
+.staff .row > div:nth-child(2) > div {
+	background: url("pictures/aga.png") top /cover;
+}
+.staff .row > div:nth-child(3) > div {
+	background: url("pictures/omlet.png") center /cover;
+}
+.staff .row > div > div > div {
+	line-height: 200px;
+	width: 200px;
+	background-color: rgba(0, 0, 0, 0.5);
+	border-radius: 100px;
+	color: #fff;
+	display: none;
+	transition: ease-in-out .3s;
+}
+.staff .row > div > div:hover div {
+	display: inline-block;
+}
+footer > .footer-top {
+	background: #313234;
+	padding: 40px 0;
+}
+footer > .footer-top p {
+	background-color: #313234 !important;
+	text-align: left;
+	color: #fff;
+    font-size: 14px;
+    margin: 0;
+}
+footer > .footer-top .row div:nth-child(2) [class*="col-"] {
+	padding: 0;
+}
+footer > .footer-top a {
+	background-color: firebrick;
+	color: #fff;
+	padding: 10px;
+	font-size: 20px;
+	margin: 10px 10px 0 0;
+	float: left;
+}
+footer > .footer-bottom {
+	background: #000;
+	color: #fff;
+	line-height: 12px;
+}
+footer > .footer-bottom h3 {
+    font-size: 12px;
+    margin: 3px auto;
+}
+footer h2 { 
+	color: #fff; 
+	text-align: left; 
+	margin: 10px 0 5px;
+    font-size: 22px;
+} 
+footer h2 span { 
+	background: #313234; 
+	padding-right: 10px;
+    color: #fff;
+}
+@media (max-width: 450px) {
+    .navbar-header > .big-brand > p {
+        font-size: 14px;
+    }
+}
+@media (min-width: 451px) {
+    .navbar-header > .big-brand > p {
+        font-size: 26px;
+    }
+}
+@media (max-width: 767px) {
+    .hero > div > p {
+        padding-top: 16%;
+    }
+    .hero {
+        background-attachment: scroll;
+    }
+    .pro {
+         background-attachment: scroll;
+    }
+    .staff .row > div > div {
+		margin-top: 20px;
+	}
+	.staff .row > div > div > div {
+		display: block;
+		background-color: rgba(0, 0, 0, 0.2);
+	}
+	footer h1 {
+		margin-top: 25px;
+		text-align: center;
+	}
+	footer .footer-top p,
+	footer .footer-top i {
+		text-align: center;
+		float: none;
+	}
+	footer table {
+		margin: 0 auto;
+	}
+    .footer-bottom h3 {
+        margin: 0;
+    }
+    footer h2 { 
+	   text-align: center; 
+    }
+    footer > .footer-top a {
+        float: none;
+    }
+    .navbar-inverse .navbar-nav {
+        width: 100%;
+    }
+    nav .navbar-collapse ul {
+        margin-left: 0;
+    }
+    .navbar-collapse {
+        padding: 0;
+    }
+    .staff > a {
+        position: static;
+    }
+    .row {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
