@@ -8,7 +8,7 @@
 }
 p {
 	margin-top: 10px;
-	font-size: 12px;
+	font-size: 13px;
 }
 h1 {
 	font-size: 40px;
@@ -69,6 +69,7 @@ nav .big-image {
 .nav li {
 	display: inline;
 }
+/*change here*/
 .navbar-header > div {
     display: inline-block;
 }
@@ -80,6 +81,7 @@ nav .big-image {
     margin-top: 10px;
     padding-left: 20px;
     border-left: 1px solid black;
+    float: left;
 }
 .vr > p {
     margin: 0;
@@ -131,14 +133,18 @@ nav .navbar-collapse ul {
 .hero {
 	height: calc(100vh - 70px);
 	width: 100%;
-	background: url("pictures/jumbo.jpeg") no-repeat center center fixed;
+    filter: brightness(90%);
+	background: url("pictures/jumbop.png") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
 }
+.hero > div {
+    padding: 0 10px 0;
+}
 .hero p {
-    padding-top: 7%;
+    padding-top: 30%;
     font-size: 30px;
     font-weight: 500;
     text-align: center;
@@ -149,9 +155,18 @@ nav .navbar-collapse ul {
 }
 .icons > a {
     position: relative;
-    top: -30vh;
+    top: -24vh;
 }
-.icons h1,
+.icons p {
+    font-size: 13px;
+}
+.icons > div > div > div {
+    padding: 0 15px 0;
+}
+.row {
+    margin-left: 0;
+    margin-right: 0;
+}
 .staff h1 {
     margin-bottom: 50px;
 }
@@ -176,7 +191,7 @@ nav .navbar-collapse ul {
     position: relative;
 	height: 70vh;
 	width: 100%;
-	background: url("pictures/pro.jpeg") no-repeat center center fixed;
+	background: url("pictures/pro.png") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -188,15 +203,17 @@ nav .navbar-collapse ul {
     top: -35vh;
 }
 .pro p {
-    font-size: 16px;
+    font-size: 13px;
 }
 .pro .thumbnail {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.95);
     position: absolute;
-    top: -80px;
+    left: 0;
+    right: 0;
+    margin: auto;
 }
 .thumbnail {
-    margin-top: 25%;
+    margin-top: 10%;
 }
 .btn-primary {
     background-image: none;
@@ -236,7 +253,7 @@ nav .navbar-collapse ul {
 	background: url("pictures/aga.png") top /cover;
 }
 .staff .row > div:nth-child(3) > div {
-	background: url("pictures/omlet.png") center /cover;
+	background: url("pictures/omlet.jpg") center /cover;
 }
 .staff .row > div > div > div {
 	line-height: 200px;
@@ -302,15 +319,17 @@ footer h2 span {
         font-size: 26px;
     }
 }
-@media (max-width: 767px) {
-    .hero > div > p {
-        padding-top: 16%;
-    }
+@media (max-width: 1024px) {
     .hero {
         background-attachment: scroll;
     }
     .pro {
          background-attachment: scroll;
+    }
+}
+@media (max-width: 767px) {
+    .hero > div > p {
+        padding-top: 60vh;
     }
     .staff .row > div > div {
 		margin-top: 20px;
@@ -319,6 +338,9 @@ footer h2 span {
 		display: block;
 		background-color: rgba(0, 0, 0, 0.2);
 	}
+    .thumbnail {
+        width: 90%;
+    }
 	footer h1 {
 		margin-top: 25px;
 		text-align: center;
@@ -351,9 +373,5 @@ footer h2 span {
     }
     .staff > a {
         position: static;
-    }
-    .row {
-        margin-left: 0;
-        margin-right: 0;
     }
 }
